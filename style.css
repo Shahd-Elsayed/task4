@@ -1,0 +1,485 @@
+body{
+    margin: auto;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+:root {
+    --blueColor: #02a3f1;
+    --redColor: #f25123;
+    --greenColor: #7fba00;
+    --greycolor: #ffffff9c;
+}
+nav{
+    position: relative;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+nav img{
+position: absolute;
+top: 15px;
+left: 15px;
+}
+.nav_links{
+    position: absolute;
+    top: 40px;
+    left: 120px;
+}
+.nav_links a{
+    text-decoration: none;
+    padding: 15px;
+    font-size: 22px;
+}
+nav button {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    padding: 8px 35px;
+    border-style: none;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.opensidebar{
+    background-color: black;
+    margin: -13px 0 0 0;
+    cursor: pointer;
+}
+.closesidebar{
+    background: none;
+    margin: -13px 0 0 0;
+    cursor: pointer;
+}
+.sidebarSection{
+    background-image:url(background_blur.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 8;
+    display:none;
+    position: fixed;
+}
+.Community{
+    margin: 29px 0px 0 108px;
+}
+.Community h3{
+    margin: 17px 0px -10px 0;
+}
+.Community p{
+    color: var(--greycolor);
+    font-size: 14px;
+}
+.Sbar_links{
+    margin: 30px 240px 0 30px;
+}
+.OrangeLogin{
+    color: var(--redColor) !important;
+}
+.Sbar_links a{
+    display: block;
+    font-size: 25px;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.firstPart{
+    display: grid;
+    background-color: black;
+    color: white;
+    grid-template-columns: repeat(2,auto);
+    padding: 0px 10px 50px 10px;
+}
+.leftpart{
+grid-column: 1;
+position: relative;
+}
+.leftpart h1{
+    padding: 30px 30px;
+    font-size: 55px;
+    font-weight: 300;
+}
+.leftpart span{
+    font-weight: 600;
+}
+.leftpart h2{
+    position: absolute;
+}
+.searchblock{
+    position: relative;
+    background-image: url(background_blur.png);
+    width: 350px;
+    height: 40px;
+    border-radius: 60px;
+    margin: 10px 0 50px 40px;
+    border-style: none;
+    top: -35px;
+}
+.profile{
+    top: -50px;
+    margin: 10px 0 50px 40px;
+    position: relative;
+}
+.rightpart{
+    grid-column: 20;
+}
+.par1 {
+    position: relative;
+    top: -45px;
+    left: 305px;
+}
+.par2{
+    position: relative;
+    top: -123px;
+    left: 380px;
+}
+.par1 h2 , .par2 h2{
+    margin: 10px 0px 0px 0px;
+}
+.par1 h3 , .par2 h3{
+    font-weight: 100;
+    color: var(--greycolor);
+}
+.prof_img{
+    width: 70px;
+    height:70px;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 4px;
+    position: absolute;
+
+}
+.blueBorder{
+    border-color: var(--blueColor);
+    z-index: 4;
+}
+.greenBorder{
+    border-color: var(--greenColor);
+    z-index: 3;
+    margin-left: 55px;
+}
+.redBorder{
+    border-color: var(--redColor);
+    z-index: 1;
+    margin-left: 163px;
+}
+.whiteBorder{
+    border-color: white;
+    z-index: 2;
+    margin-left: 110px;
+
+}
+.blackBorder{
+    border-color: black;
+}
+.cardgreenBorder{
+    border-color: var(--greenColor);
+}
+.cardredBorder{
+    border-color: var(--redColor);
+}
+#fa-search{
+    position: absolute;
+    top: 7px;
+    left: 19px;
+    z-index: 1;
+    color: var(--greycolor);
+}
+#searcharrow{
+    position: relative;
+    top: 9px;
+    left: 315px;
+    z-index: 1;
+    color: var(--redColor);
+}
+
+
+
+
+
+.second_part{
+    position: relative;
+    padding: 30px 20px;
+}
+.second_part h1{
+    color: var(--redColor);
+    font-size: 45px;
+    margin-left: 80px;
+}
+.second_part p{
+    margin: 0px 0px 40px 0;
+    color: var(--greycolor);
+    margin-left: 80px;
+}
+.second_part .orange_button{
+    padding: 1px 25px 10px 25px;
+    border-style: none;
+    background-color: var(--redColor);
+    color: white;
+    font-size: 15px;
+    border-radius: 50px;
+    top: 105px;
+    right: 45px;
+    position: absolute;
+}
+.profileCards{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    border-color: var(--greycolor);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px 5px #80808057;
+}
+.card_img{
+    width: 70px;
+    height:70px;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 4px;
+}
+.card h3{
+    font-size: 23px;
+    margin-top: 6px;
+    margin-bottom: -5px;
+}
+.card h4{
+    color: #969494;
+    font-weight: 100;
+}
+.card button{
+    border-color: #a09f9f;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px 25px 10px 25px;
+    border-radius: 50px;
+    color: var(--redColor);
+    background-color: white;
+    font-size: 14px;
+}
+.second_part button i{
+    position: relative;
+    top: 7px;
+    right: -10px;
+    color: var(--redColor);
+}
+
+
+
+
+
+.third_part{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.third_part h1{
+    text-align: center;
+    color: var(--redColor);
+    font-size: 45px;
+}
+.third_part .h3{
+    text-align: center;
+    color: var(--greycolor);
+}
+.third_part .projectCard{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.third_part .projectCard .card1{
+    width: 320px;
+    padding: 15px 25px 25px 25px;
+    border-color: var(--greycolor);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+}
+.third_part hr{
+    border-style: solid;
+    color: var(--greycolor);
+}
+.card1 .trail{
+    color: var(--greycolor);
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+.card1 .price{
+    font-size: 24px;
+    font-weight: bold;
+}
+.card1 .month{
+    font-weight: 100;
+    color: var(--greycolor);
+}
+.card1 button{
+    border-style: solid;
+    border-color: var(--greycolor);
+    border-radius: 50px;
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+.card1 .whiteButton{
+    background-color: white;
+    color: black;
+}
+.card2 {
+    position: relative;
+    background-image: url(background_blur.png);
+    opacity: 0.8;
+}
+.most_popular::after{
+    content: "Most Popular";
+    padding: 6px 12px;
+    background-color: var(--redColor);
+    position: absolute;
+    font-size: 12px;
+    border-end-start-radius: 12px;
+    border-top-left-radius: 12px;
+    right: 0;
+    top: 12px;
+    color: black;
+}
+.third_part .load{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0px;
+}
+.third_part .circle{
+    width: 15px;
+    height: 15px;
+    background-color: var(--greycolor);
+    border-radius: 50px;
+}
+.third_part .redCircle{
+    background-color: var(--redColor);
+}
+
+
+
+.footer{
+    display: grid;
+    padding: 40px 50px;
+    grid-template-columns: auto 290px 290px auto;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(background_blur.png);
+    gap: 50px;
+}
+.footer .footerpart1 img{
+    float: left;
+    padding: 5px;
+}
+.footer .footer1sec1{
+    padding: 0px 0px 0 90px;
+}
+.footer .footer1sec1 h3{
+    margin: 17px 0px -10px 0;
+}
+.footer .footer1sec1 p{
+    color: var(--greycolor);
+    font-size: 14px;
+}
+.footer .footer1sec2 p{
+    color: var(--greycolor);
+    padding: 4px;
+}
+.footer1sec3 h4 i{
+position: absolute;
+    color: var(--greycolor);
+    top: -1px;
+    left: 85px;
+}
+.footer .footerpart2 .company_info{
+    color: var(--greycolor);
+}
+.footer .footerpart3 .support_info{
+    color: var(--greycolor);
+}
+.Orangehr{
+    border-style: solid;
+    color: var(--redColor);
+}
+.icons i{
+    margin: 5px;
+}
+
+
+
+
+@media(max-width:1200px){
+    .profileCards {
+        flex-wrap: wrap;
+    }
+    .rightpart{
+        width: 400px;
+    }
+    .firstPart{
+        height: 550px;
+    }
+    .footer{
+        grid-template-columns: auto 96px 65px auto;
+        gap: 35px;
+        }
+    .sidebarSection{
+        display: none;
+    }
+}
+@media(max-width:768px){
+
+    nav .nav_links , nav .login{
+        display: none;
+    }
+    .rightpart{
+        display: none;
+    }
+    .blackBorder{
+        border-color: white;
+    }
+    .firstPart{
+        height: 530px;
+    }
+    .second_part{
+        background-color: black;
+    }
+    .second_part h1{
+        width: 270px;
+    }
+    .profileCards .card  {
+        background-color: black;
+        color: white;
+    }
+    .profileCards button{
+        background-color: black;
+    }
+    .card img{
+        float: left;
+        margin: 13px 25px 0px 0px;
+    }
+    .footer{
+        display: block;
+        position: relative;
+    }
+    .footer .footer1sec1{
+        padding: 1px 0px 35px 0px;
+        }
+    .footer .footer1sec2 p{
+        margin: -15px 0 0 0;
+    }
+    .footer .footerpart3{
+        position: absolute;
+        right: 75px;
+        top: 276px;
+        }
+}
