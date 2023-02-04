@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script>
+        function showSidebar() {
+        document.getElementById("mySidebar").style.width = "100vw";
+        document.getElementById("mySidebar").style.height = "100vh";
+        document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function clearSidebar() {
+        document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <nav>
+    <img class="logo" src="MSP_Logo/MSP_small_logo.svg">
+    <div class="sidebarSection" id="mySidebar">
+        <button onclick="clearSidebar()" class="closesidebar"><i class="material-icons" style="font-size:36px;color: white;margin: 0;;
+            ">clear</i></i></button>
+        <div class="Sbar_info">
+            <img src="MSP_Logo/MSP_small_logo.svg">
+            <div class="Community">
+            <h3>MSP Tech-Club</h3>
+            <p>Ain Shams University</p>
+            </div>
+            <div class="Sbar_links">
+            <a href="#" class="">Home</a>
+            <a href="#" class="">Service</a>
+            <a href="#" class="">News</a>
+            <a href="#" class="">Contact</a>
+            <hr class="Orangehr">
+            <a href="#" class="OrangeLogin">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="nav_links">
+        <a>Home</a>
+        <a>Service</a>
+        <a>News</a>
+        <a>Contact</a>
+    </div>
+    <button onclick="showSidebar()" class="opensidebar"><i class="fa fa-reorder" style="font-size:36px;color:white"></i></button>
+    <button class="login">Login</button>
+    <!-- <div class="clearfix"></div> -->
+    </nav>
+    <div class="main">
+     <div class="firstPart">
+        <div class="leftpart">
+            <h1>Ready to launch <br>
+                your app in one,<br>
+                <span>Application</span>
+            </h1>
+            <div class="searchblock">
+            <i class="material-icons" id="searcharrow">arrow_forward</i>
+            <i class="fa fa-search" id="fa-search" style="font-size:24px"></i>
+            </div>
+            <div class="profile">
+                <img class="prof_img blueBorder"src="people/pexels-marcio-bordin-1840608 (1).jpg">
+                <img class="prof_img greenBorder" src="people/pexels-lola-russian-1855582.jpg">
+                <img class="prof_img whiteBorder" src="people/pexels-steshka-willems-1806905.jpg">
+                <img class="prof_img redBorder" src="people/pexels-rein-krijgsman-3139612.jpg">
+        </div>
+        <div class="par1">
+            <h2>30K</h2><br>
+            <h3>Viewer</h3>
+        </div>
+        <div class="par2">
+            <h2>20K</h2><br>
+            <h3>Liked</h3>
+        </div>
+        </div>
+        <img class="rightpart" src="MSP_Logo/MSP_big_logo.svg">
+        </div>
+
+
+
+
+        <div class="second_part">
+            <h1>How does it Works</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit<br> Illum asperiores alias optio ipsa!</p>
+            <button class="orange_button">View all<i class="material-icons"style="color:white">arrow_forward</i></button>
+            <div class="profileCards">
+            <div class="card">
+                <img class="card_img blueBorder"src="people/pexels-marcio-bordin-1840608 (1).jpg"><br>
+                <h3 >Jane Cooper</h3>
+                <h4>President of Sales</h4>
+                <button>View all <i class="material-icons">arrow_forward</i></button>
+            </div>
+            <div class="card">
+                <img class="card_img cardgreenBorder"src="people/pexels-lola-russian-1855582.jpg"><br>
+                <h3 >Wade Warren</h3>
+                <h4>Dog Trainer</h4>
+                <button>View all <i class="material-icons">arrow_forward</i></button>
+            </div>
+            <div class="card">
+                <img class="card_img blackBorder"src="people/pexels-steshka-willems-1806905.jpg"><br>
+                <h3 >Esther Howard</h3>
+                <h4>Marketing Coordinator</h4>
+                <button>View all <i class="material-icons">arrow_forward</i></button>
+            </div>
+            <div class="card">
+                <img class="card_img cardredBorder"src="people/pexels-rein-krijgsman-3139612.jpg"><br>
+                <h3 >Jenny Wilson</h3>
+                <h4>Nursing Assistant</h4>
+                <button>View all <i class="material-icons">arrow_forward</i></button>
+            </div>
+            <div class="card">
+                <img class="card_img blueBorder"src="people/pexels-radu-florin-2506897.jpg"><br>
+                <h3 >Guy Hawkins</h3>
+                <h4>Marketing Coordinator</h4>
+                <button>View all <i class="material-icons">arrow_forward</i></button>
+            </div>
+            <div class="card">
+                <img class="card_img cardgreenBorder"src="people/pexels-mateus-souza-3586798 (1).jpg"><br>
+                <h3 >Robert Fox</h3>
+                <h4>Nursing Assistant</h4>
+                <button>View all <i class="material-icons">arrow_forward</i></button>
+            </div>
+            </div>
+        </div>
+
+
+            <div class="third_part">
+                <h1>Simple Pricing for Everyone</h1>
+                <h3 class="h3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis<br> facere nulla sequi quis.</h3>
+                <div class="projectCard">
+                    <div class="card1">
+                        <h3>High</h3>
+                        <p class="price"><sup>$</sup>30<sub class="month">/month</sub></p>
+                        <p class="trail">Get our 14 day free trail</p><hr>
+                        <p><i class="fa fa-check-circle" style="font-size:25px;color: #b0aaaa9c;"></i>  60-day chat history</p>
+                        <p><i class="fa fa-check-circle" style="font-size:25px;color: #b0aaaa9c;"></i>  15 GB cloud storage</p>
+                        <p><i class="fa fa-check-circle" style="font-size:25px;color: #b0aaaa9c;;"></i>  24/7 Support</p>
+                        <button>choose plan</button>
+                    </div>
+                    <div class="card1 card2">
+                        <div class="most_popular"></div>
+                        <h3>Normal</h3>
+                        <p class="price"><sup>$</sup>15<sub class="month">/month</sub></p>
+                        <p class="trail">Get our 14 day free trail</p><hr>
+                        <p><i class="fa fa-check-circle" style="font-size:25px;color: white;"></i> 60-day chat history</p>
+                        <p><i class="fa fa-check-circle" style="font-size:25px;color: white;"></i> 15 GB cloud storage</p>
+                        <p><i class="fa fa-check-circle" style="font-size:25px;color: white;"></i> 24/7 Support</p>
+                        <button class="whiteButton">choose plan</button>
+                    </div>
+                    <div class="card1">
+                        <h3>Low</h3>
+                        <p class="price"><sup>$</sup>05<sub class="month">/month</sub></p>
+                        <p class="trail">Get our 14 day free trail</p><hr>
+                        <p><i class="fa fa-check-circle" style="font-size:25px;color: #b0aaaa9c;"></i> 60-day chat history</p>
+                        <p><i class="fa fa-check-circle" style="font-size:25px;color: #b0aaaa9c;"></i> 15 GB cloud storage</p>
+                        <p><i class="fa fa-check-circle" style="font-size:25px;color: #b0aaaa9c;"></i> 24/7 Support</p>
+                        <button>choose plan</button>
+                    </div>
+                </div>
+                    <div class="load">
+                    <div class="circle"></div>
+                    <div class="circle redCircle"></div>
+                    <div class="circle"></div>
+                 </div>
+            </div>
+
+
+                    <div class="footer">
+                        <div class="footerpart1">
+                            <img src="MSP_Logo/MSP_small_logo.svg">
+                            <div class="footer1sec1">
+                            <h3>MSP Tech-Club</h3>
+                            <p>Ain Shams University</p>
+                        </div>
+                        <div class="footer1sec2">
+                            <p>MSP Websites Theme is the last theme you will ever have</p>
+                        </div>
+                        <div class="footer1sec3">
+                            <h4 style="position: relative;">Read More <i class="material-icons">arrow_forward</i></h4>
+                            <div class="icons">
+                            <i class="fa fa-facebook-square" style="font-size:36px ;"></i>
+                            <i class="fa fa-pinterest-square" style="font-size:36px"></i>
+                            <i class="fa fa-twitter-square" style="font-size:36px"></i>
+                            <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="footerpart2">
+                            <h3>Company</h3>
+                            <div class="company_info">
+                                <p>About US</p>
+                                <p>Services</p>
+                                <p>Case Studies</p>
+                                <p>Blog</p>
+                                <p>Contact</p>
+                            </div>
+                            
+                        </div>
+                        <div class="footerpart3">
+                            <h3>Support</h3>
+                            <div class="support_info">
+                                <p>Community</p>
+                                <p>Resources</p>
+                                <p>FAQs</p>
+                                <p>Privacy</p>
+                                <p>Careers</p>
+                            </div>
+                        </div>
+                        <div class="footer4">
+                            <h3>Contact Us</h3>
+                            <hr class="Orangehr">
+                            <div class="contact_info">
+                                <p> @ bill.sanders@examples.com</p>
+                                <p><i class="material-icons">call</i> (219) 555-0114</p>
+                                <p><i class="material-icons">place</i> 2118 thornridge Cir.Syracuse,Connection 35624</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+            
+
+    
+    
+    </div>
+</body>
+</html
